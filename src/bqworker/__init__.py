@@ -1,5 +1,4 @@
 """
-
 BigQueryWorker - framework for processing BigQuery queries on App Engine.
 
 To use, create a subclass of BigQueryWorker:
