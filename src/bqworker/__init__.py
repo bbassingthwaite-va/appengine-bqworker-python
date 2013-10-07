@@ -78,7 +78,15 @@ appengine_config.py file with the prefix "bqworker_":
     bqworker_DEFAULT_PAGE_SIZE   = 100
     bqworker_DEFAULT_QUERY_MODE  = constants.INTERACTIVE_MODE
 
+
+Release notes
+=============
+
+v0.1.0
+ - initial release
 """
+
+__version__ = '0.1.0'
 
 __all__ = []
 
