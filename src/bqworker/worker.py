@@ -59,7 +59,7 @@ class BigQueryWorker(object):
                             ''.join(random.sample(string.uppercase, 6))
 
     def _defer(self, fn, url_tag, countdown=0):
-        url = '%s/bqworker/%s/%s' % (config.DEFERRED_URL_PREFIX, self._instance_id, url_tag)
+        url = '%s/bqworker/%s/%s/%s' % (config.DEFERRED_URL_PREFIX, self.__class__.__name__, self._instance_id, url_tag)
         deferred.defer(fn, _queue=self.queue, _url=url, _countdown=countdown)
 
     def _log_job_id(self):
